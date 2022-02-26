@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-bar</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 97vw;
+        height: 147vh;
+        background-color: rgb(27, 27, 27);
+        flex-direction: column;
+    }
+    body>h1{
+      color: white;
+    }
+   
+    /* for section */
+    .section {
+      max-width: 300px;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+  background-image: linear-gradient(rgb(247, 86, 86),rgb(123, 123, 246),rgb(128, 252, 128));
+}
+section::-webkit-scrollbar{
+  width: 1vw;
+}
+section::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(red,blue,green);
+  border-radius: 5px;
+}
+section::-webkit-scrollbar-thumb:hover{ background-image: linear-gradient(rgb(247, 86, 86),rgb(123, 123, 246),rgb(128, 252, 128));
+}
+section::-webkit-scrollbar-track{
+  background-image: linear-gradient(rgb(247, 86, 86),rgb(123, 123, 246),rgb(128, 252, 128));
+  border-radius: 6px;
+}
+section::-webkit-scrollbar-track:hover{
+  background-image: linear-gradient(red,blue,green);
+}
+/* secontion css end */
+
+/* body scrollbar started */
+body::-webkit-scrollbar{
+  width: 1vw;
+}
+body::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(transparent,red);
+  border-radius: 5px;
+}
+body::-webkit-scrollbar-thumb:hover{ background-image: linear-gradient(transparent,rgb(0, 4, 255));
+}
+body::-webkit-scrollbar-track{
+  border-radius: 6px;
+}
+body::-webkit-scrollbar-track:hover{
+  background-color: rgba(85, 85, 85, 0.568);
+}
+</style>
+<body>
+  <h1>Custom Scroll Bars</h1>
+    <section class="section">
+        <h1>This is custom Scroll bar</h1>
+        <h2>now this is only workable on crome not on firefox</h2>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ipsa porro quaerat, molestias quibusdam quos dolorum ut, iusto neque incidunt nobis omnis, magnam dolorem quis earum? Aut voluptatibus corporis aliquam dolor vero animi quae nihil perferendis delectus consequatur. Ex dignissimos quis, at maiores fuga temporibus. Assumenda doloribus consectetur beatae nesciunt dolorum tempore laborum corrupti nam recusandae dignissimos? Provident tempore ex quae architecto doloremque quos corrupti quas temporibus dolorum accusantium. Neque iste beatae nemo, officia minus sint veniam delectus nulla quidem, eum, perspiciatis odit recusandae voluptas. Quam eum voluptatibus ad sit eos ratione et voluptates ab ipsam reiciendis nostrum accusantium perspiciatis deserunt nemo, asperiores aliquid rem dolores quod dolorem corrupti earum porro odio deleniti. Dolore enim nostrum blanditiis quas fuga aut neque soluta quam dolorum, incidunt alias fugit corrupti? Quidem, hic eveniet, libero, ab repudiandae eum adipisci dolorem quod neque quibusdam facilis dolor maxime perferendis ut incidunt minima. Nesciunt nostrum odio suscipit rerum corrupti labore, assumenda architecto delectus quidem! Illo molestias quaerat impedit dolorem repellendus nesciunt. Incidunt numquam nulla natus assumenda asperiores iste repellat tempora sit laboriosam dicta vitae esse perspiciatis, dolores amet cum veritatis optio fugit? Officiis eos, odio dignissimos praesentium fuga reiciendis. Qui corporis, praesentium consequatur vitae totam itaque explicabo corrupti inventore aliquid laborum facere quia deleniti, veritatis quidem optio quibusdam iure harum eligendi esse magnam tempore minima placeat quisquam mollitia. Tenetur repellendus voluptates, vero id porro iure quasi repudiandae magnam nihil perferendis esse mollitia hic dolorum ea totam laborum natus, reiciendis debitis cumque soluta quibusdam, architecto minima? Ad eos aperiam quisquam, quam placeat accusantium velit? Ratione aliquid tempora quae laborum sequi fuga voluptatem illum corporis esse eius cumque voluptates iusto cupiditate iste dolores, quidem adipisci iure dicta, architecto nam, omnis porro? Quasi voluptate a saepe itaque voluptatibus earum, natus quod eveniet dolore, dolor aspernatur suscipit amet veritatis reprehenderit?</p>
+        </div>
+        
+    </section>
+</body>
+</html>
